@@ -1,6 +1,30 @@
 
 
 
+<?php
+
+$src = "sem_src";
+if(isset($_GET['src'])) {
+        $src = $_GET['src'];
+    }
+
+if(isset($_GET['site']))
+  $site = $_GET['site'];
+
+  else
+    $site = "sem_site";
+
+    $url_checkout_kit1 = "https://clkdmg.site/pay/8e8f0b6c-3db0-4b30-a4f5-ac32913993e0?src=".$src."";
+    $url_checkout_kit3 = "https://clkdmg.site/pay/8e8f0c3d-d547-409a-8e0e-b398295a5f21?src=".$src."";
+    $url_checkout_kit4 = "https://clkdmg.site/pay/8eb12e8a-e429-4503-9756-80bd3923777a?src=".$src."";
+
+    $url_checkout_kit1 = "https://www.cleantea.com.br/?carrinhoproduto=".$url_checkout_kit1;
+    $url_checkout_kit3 = "https://www.cleantea.com.br/?carrinhoproduto=".$url_checkout_kit3;
+    $url_checkout_kit4 = "https://www.cleantea.com.br/?carrinhoproduto=".$url_checkout_kit4;
+
+?>
+
+
 <!doctype html>
 <html lang="pt-br">
 <head>
@@ -108,7 +132,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                         <h2 class="titulo">KIT BÁSICO</h2>
                                     </div>
                                     <div class="w-20 bg-red porcent">
-                                        -10%
+                                        -25%
                                     </div>
                                 </div>
 
@@ -163,7 +187,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                         </h2>
                                     </div>
                                     <div class="w-20 bg-red porcent">
-                                        -10%
+                                        -33%
                                     </div>
                                 </div>
 
@@ -217,7 +241,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                         <h2 class="titulo">KIT DUPLO</h2>
                                     </div>
                                     <div class="w-20 bg-red porcent">
-                                        -10%
+                                        -31%
                                     </div>
                                 </div>
 
