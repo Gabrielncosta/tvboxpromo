@@ -1,0 +1,701 @@
+
+
+
+<?php
+
+$src = "sem_src";
+if(isset($_GET['src'])) {
+        $src = $_GET['src'];
+    }
+
+if(isset($_GET['site']))
+  $site = $_GET['site'];
+
+  else
+    $site = "sem_site";
+
+    $url_checkout_kit1 = "https://clkdmg.site/pay/8e8f0b6c-3db0-4b30-a4f5-ac32913993e0?src=".$src."";
+    $url_checkout_kit3 = "https://clkdmg.site/pay/8e8f0c3d-d547-409a-8e0e-b398295a5f21?src=".$src."";
+    $url_checkout_kit4 = "https://clkdmg.site/pay/8eb12e8a-e429-4503-9756-80bd3923777a?src=".$src."";
+
+    $url_checkout_kit1 = "https://www.cleantea.com.br/?carrinhoproduto=".$url_checkout_kit1;
+    $url_checkout_kit3 = "https://www.cleantea.com.br/?carrinhoproduto=".$url_checkout_kit3;
+    $url_checkout_kit4 = "https://www.cleantea.com.br/?carrinhoproduto=".$url_checkout_kit4;
+
+?>
+
+
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SuperTVBox - Tenha milhares de canais, filmes, séries e muito mais em um único aparelho.</title>
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link href="https://vjs.zencdn.net/7.6.0/video-js.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    		<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PS88TTN');</script>
+<!-- End Google Tag Manager -->
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5d409dc67d27204601c8733d/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+</head>
+<body onload="startCountdown(); removeestoque()">
+
+
+			<!-- Google Tag Manager (noscript) -->
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PS88TTN"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 text-center topo">
+                <img src="images/logo.png"  alt="" class="img-fluid ">
+            </div>
+        </div>
+
+<!--        <div class="row">-->
+<!--            <div class="container">-->
+                <div class="row justify-content-center">
+                    <div class="col-11 col-md-6 col-lg-4 text-center cronometro-titulo-container border-top">
+                        <h3 class="font-bold">Essa oferta se encerra em...</h3>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+<!--                    <div class="col-lg-4 col-md-3" ></div>-->
+                    <div class="col-10 col-md-6 col-lg-4 align-self-center ">
+                        <div class="row ">
+                            <div class=" col text-center bg-red radius-10">
+                                <h2 class="text-cronometro">00</h2>
+                                <smal class="text-cronometro">horas</smal>
+                            </div>
+                            <div class="pontos-box">
+                                <h2 class="pontos-cronometro">:</h2>
+                            </div>
+                            <div class=" col text-center bg-red radius-10">
+                                <h2 class="text-cronometro text-amarelo minutoscontador">00</h2>
+                                <smal class="text-cronometro">minutos</smal>
+                            </div>
+                            <div class="pontos-box">
+                                <h2 class="pontos-cronometro">:</h2>
+                            </div>
+                            <div class=" col text-center bg-red radius-10">
+                                <h2 class="text-cronometro text-amarelo segundocontador">00</h2>
+                                <smal class="text-cronometro">segundos</smal>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-center font-bold contador-estoque-text">
+                        <span class="text-vermelho quantidadeestoque">163</span> unidades no estoque
+                    </div>
+                </div>
+
+
+
+                <div class="row justify-content-center">
+                    <div class="col-sm-12 col-md-12 col-lg-10 align-self-center box-container">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-sm-5 col-md colkit">
+                                <div class="row">
+                                    <div class="col bg-black">
+                                        <h2 class="titulo">KIT BÁSICO</h2>
+                                    </div>
+                                    <div class="w-20 bg-red porcent">
+                                        -10%
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col">
+                                        <h2 class="titulo-produto">
+                                            SUPER TVBOX COM 1.957 CANAIS
+                                        </h2>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col text-center">
+                                        <img src="images/tvbox1.png" class="img-fluid" alt="Tv Box">
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col">
+                                        <ul class="list listaProduto">
+                                            <li><i class="fa fa-check"></i> 1 aparelho Android Configurado</li>
+                                            <li><i class="fa fa-check"></i> 1 Controle Remoto</li>
+                                            <li><i class="fa fa-check"></i> 1 Fonte de energia</li>
+                                            <li><i class="fa fa-check"></i> 1 Cabo HDMI Blindado</li>
+                                            <li><i class="fa fa-check"></i> <b>FRETE 100% GRÁTIS (SÓ HOJE)</b></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col text-center">
+                                        <div class="de-por">de 349,00 por apenas</div>
+                                        <div class="preco">12x de <b><small>R$</small>31,</b><sup>59</sup></div>
+                                        <div class="font-bold economize">Ou R$ 279,0 à vista</div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col text-center">
+                                        <a href="<?php echo $url_checkout_kit1;?>" class="pulse">
+                                            <img src="images/btn_comprarkit.png" style="margin-top: 25px;" class="img-fluid" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-1"></div>
+                            <div class="col-12 col-sm-5 col-md colkit">
+                                <div class="row">
+                                    <div class="col bg-black">
+                                        <h2 class="titulo">
+                                            KIT TURBO
+                                        </h2>
+                                    </div>
+                                    <div class="w-20 bg-red porcent">
+                                        -10%
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col">
+                                        <h2 class="titulo-produto">
+                                            SUPER TVBOX COM 1.957 CANAIS + TECLADO
+                                        </h2>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col text-center">
+                                        <img src="images/tvbox2.png" class="img-fluid" alt="Tv Box">
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col">
+                                        <ul class="list listaProduto">
+                                            <li><i class="fa fa-check"></i> 1 aparelho Android Configurado</li>
+                                            <li><i class="fa fa-check"></i> 1 Mini teclado Bluetooth</li>
+                                            <li><i class="fa fa-check"></i> 1 Controle Remoto</li>
+                                            <li><i class="fa fa-check"></i> 1 Fonte de energia</li>
+                                            <li><i class="fa fa-check"></i> 1 Cabo HDMI Blindado</li>
+                                            <li><i class="fa fa-check"></i> <b>FRETE 100% GRÁTIS (SÓ HOJE)</b></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col text-center">
+                                        <div class="de-por">de 399,00 por apenas</div>
+                                        <div class="preco">12x de <b><small>R$</small>33,</b><sup>85</sup></div>
+                                        <div class="font-bold economize">Ou R$ 299,00 à vista</div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col text-center">
+                                        <a href="<?php echo $url_checkout_kit3;?>" class="pulse">
+                                            <img src="images/btn_comprarkit.png" class="img-fluid" alt="">
+                                        </a>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="col-md-1"></div>
+                            <div class="col-12 col-sm-5 col-md colkit">
+                                <div class="row">
+                                    <div class="col bg-black">
+                                        <h2 class="titulo">KIT DUPLO</h2>
+                                    </div>
+                                    <div class="w-20 bg-red porcent">
+                                        -10%
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col">
+                                        <h2 class="titulo-produto">
+                                            SUPER TVBOX COM 1.957 CANAIS
+                                        </h2>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col text-center">
+                                        <img src="images/tvbox3.png" class="img-fluid" alt="Tv Box">
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col">
+                                        <ul class="list listaProduto">
+                                            <li><i class="fa fa-check"></i> 2 aparelho Android Configurado</li>
+                                            <li><i class="fa fa-check"></i> 2 Controle Remoto</li>
+                                            <li><i class="fa fa-check"></i> 2 Mini Teclado Bluetooth</li>
+                                            <li><i class="fa fa-check"></i> 2 Fonte de energia</li>
+                                            <li><i class="fa fa-check"></i> 2 Cabo HDMI Blindado</li>
+                                            <li><i class="fa fa-check"></i> <b>FRETE 100% GRÁTIS (SÓ HOJE)</b></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col text-center">
+                                        <div class="de-por">de 759,00 por apenas</div>
+                                        <div class="preco">12x de <b><small>R$</small>65,</b><sup>67</sup></div>
+                                        <div class="font-bold economize">Ou R$ 580,00 à vista</div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col text-center">
+                                        <a href="<?php echo $url_checkout_kit4;?>" class="pulse">
+                                            <img src="images/btn_comprarkit.png" class="img-fluid" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div> 
+
+                    </div>
+                </div>
+
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <div class="row justify-content-center">-->
+<!--&lt;!&ndash;                <div class="col text-center blindagem">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <img src="images/blindagem.png" class="img-fluid" alt="">&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--            <div class="col-sm-10 col-lg-5 text-center blindagem">-->
+<!--                <div class="row justify-content-center">-->
+<!--                    <div class=" col-6 col-sm-4">-->
+<!--                        <img src="images/blindagem/compra_segura.jpg"  width="100%"  alt="">-->
+<!--                    </div>-->
+<!--                    <div class="col-6 col-sm-4">-->
+<!--                        <img src="images/blindagem/satisfacao_garantida.jpg"  width="100%" alt="">-->
+<!--                    </div>-->
+<!--                    <div class="col-6 col-sm-4">-->
+<!--                        <img src="images/blindagem/privacidade_protegida.jpg"  width="100%"  alt="">-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-lg-7 text-center blindagem">
+                <div class="row justify-content-center">
+                    <div class="col-6 col-sm-3">
+                        <img src="images/blindagem/ra1000.jpg" width="100%" alt="">
+                    </div>
+                    <div class="col-6 col-sm-3">
+                        <img src="images/blindagem/ebit.jpg" width="100%" alt="">
+                    </div>
+                    <div class="col-6 col-sm-3">
+                        <img src="images/blindagem/site_blindado.jpg" width="100%" alt="">
+                    </div>
+                    <div class="col-6 col-sm-3">
+                        <img src="images/blindagem/google.jpg" width="100%" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col text-center box-quem-comprou">
+                <h2>Quem comprou, aprova!</h2>
+                <p>Veja o que dizem nossos clientes sobre o Super Tv Box</p>
+            </div>
+        </div>
+        
+        
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-10 col-lg-8 align-self-center">
+                <div class="row">
+                    <div class="col depoimentobox">
+                        <div class="row">
+                            <div class="col text-center">
+                                <img src="images/depoimento1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col text-center">
+                                <h3>Eliseu Freitas</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col text-center estrelas">
+                                <i class="fa fa-star text-estrela"></i>
+                                <i class="fa fa-star text-estrela"></i>
+                                <i class="fa fa-star text-estrela"></i>
+                                <i class="fa fa-star text-estrela"></i>
+                                <i class="fa fa-star text-estrela"></i>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col text-center">
+                                <p class="font-bold">Comprei o aparelho Super Tv Box e
+                                    pensei que  fosse travar e que depois de
+                                    algum tempo eu teria que pagar mensalidade,
+                                    mas não, não pagonada e ainda assisto
+                                    meus jogos sem travar, minha família assiste
+                                    filmes e séries sem travar também.
+                                    Em minha casa estamos todos satisfeitos!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col depoimentobox">
+                        <div class="row">
+                            <div class="col text-center">
+                                <img src="images/depoimento2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col text-center">
+                                <h3>Jader Oliveira</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col text-center estrelas">
+                                <i class="fa fa-star text-estrela"></i>
+                                <i class="fa fa-star text-estrela"></i>
+                                <i class="fa fa-star text-estrela"></i>
+                                <i class="fa fa-star text-estrela"></i>
+                                <i class="fa fa-star text-estrela"></i>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col text-center">
+                                <p class="font-bold">Já testei vários aparelhos de Tv, e sempre
+                                    tive o mesmo problema, tinha que ficar
+                                    atualizando os conais, travavam muito quando
+                                    eu estava assistindo meus jogos e eu ainda
+                                    pagava caro pela mensalidade. Resolvi arriscar
+                                    e comprei esse Super Tv Box e me surpreendi,
+                                    tem os canais que acompanho, como SporTv,
+                                    ESPN, Premiere e outros, SEM TRAVAR!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col depoimentobox">
+                        <div class="row">
+                            <div class="col text-center">
+                                <img src="images/depoimento3.png" alt="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col text-center">
+                                <h3>José Divino</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col text-center estrelas">
+                                <i class="fa fa-star text-estrela"></i>
+                                <i class="fa fa-star text-estrela"></i>
+                                <i class="fa fa-star text-estrela"></i>
+                                <i class="fa fa-star text-estrela"></i>
+                                <i class="fa fa-star text-estrela"></i>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col text-center">
+                                <p class="font-bold">Ganhei um Super Tv Box da minha filha e agora
+                                    posso assistir meus canais NBA e meu futebol tranquilo
+                                    sem pagar mensalidade de Tv por assinatura.
+                                    Funciona muito bem sem travar e já veio com a
+                                    lista exclusiva que só o aparelho tem. Antes pagava
+                                    R$ 397,00 de Tv a cabo aqui em casa, agora
+                                    não pago mais.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-10 col-lg-10 align-self-center videos-box">
+                <div class="row justify-content-center">
+                    <div class="col-md-5 align-self-center embed-responsive embed-responsive-16by9 video-container">
+<!--                        <iframe width="100%" height="400" src="https://www.youtube.com/embed/ZKB2HSAg984" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+                       <!-- <video width="100%" height="400px" class='video-js embed-responsive-item' controls preload='auto'>
+                            <source src='videos/1.mp4' type='video/mp4'>
+                        </video>-->
+                        <iframe src="https://player.vimeo.com/video/349993944" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-md-5 align-self-center embed-responsive embed-responsive-16by9 video-container">
+<!--                        <iframe width="100%" height="400" src="https://www.youtube.com/embed/ZKB2HSAg984" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+                        <!--<video width="100%" height="400px" class='video-js embed-responsive-item' controls preload='auto'>
+                            <source src='videos/2.mp4' type='video/mp4'>
+                        </video>-->
+                        <iframe src="https://player.vimeo.com/video/350316984" width="640" height="480" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col box-garantia bg-selo">
+                <div class="row justify-content-center">
+                    <div class="col-xl-3 col-lg-5 col-md-6 col-6">
+                        <img src="images/selogarantia.png" width="100%" alt="">
+                    </div>
+
+                    <div class="col-lg-4 bg-selo align-self-center">
+                        <h2 class="text-center font-bold texto-selo-garantia">
+                            Confiamos no nosso produto, por isso te damos 6 meses de garantia para cobrir qualquer problema que você venha a ter com seu Super Tv Box!
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+<!--        <div class="row justify-content-center">-->
+<!--            <div class="col-sm-12 col-md-12 col-lg-12 align-self-center box-perguntas">-->
+<!--                <div class="row">-->
+<!--                    <div class="col text-center">-->
+<!--                        <h2>PERGUNTAS FREQUENTES</h2>-->
+<!--                        <p>Tem dúvidas? Veja abaixo as dúvidas mais frequentes que respondemos a você</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="row justify-content-center">-->
+<!--                    <div class="col-sm-12 col-md-10 col-lg-8 align-self-center">-->
+<!--                        <div class="accordion" id="perguntasFrequentesCollapse">-->
+<!--                            <div class="card">-->
+<!--                                <div class="card-header" id="headingOne">-->
+<!--                                    <h2 class="mb-0">-->
+<!--                                        <button class="btn btn-link float-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">-->
+<!--                                            Qual a qualidade de canais do Super Tv Box?-->
+<!--                                        </button>-->
+<!--                                        <i class="fa fa-caret-down text-dourado float-right d-none d-sm-block"></i>-->
+<!--                                    </h2>-->
+<!--                                </div>-->
+
+<!--                                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#perguntasFrequentesCollapse">-->
+<!--                                    <div class="card-body">-->
+<!--                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="card">-->
+<!--                                <div class="card-header" id="headingTwo">-->
+<!--                                    <h2 class="mb-0">-->
+<!--                                        <button class="btn btn-link float-left" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">-->
+<!--                                            Qual a quantidade de megas de internet preciso?-->
+<!--                                        </button>-->
+<!--                                        <i class="fa fa-caret-down text-dourado float-right d-none d-sm-block"></i>-->
+<!--                                    </h2>-->
+<!--                                </div>-->
+<!--                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#perguntasFrequentesCollapse">-->
+<!--                                    <div class="card-body">-->
+<!--                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="card">-->
+<!--                                <div class="card-header" id="headingThree">-->
+<!--                                    <h2 class="mb-0">-->
+<!--                                        <button class="btn btn-link float-left" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">-->
+<!--                                            Tem Wi-fi?-->
+<!--                                        </button>-->
+<!--                                        <i class="fa fa-caret-down text-dourado float-right d-none d-sm-block"></i>-->
+<!--                                    </h2>-->
+<!--                                </div>-->
+<!--                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#perguntasFrequentesCollapse">-->
+<!--                                    <div class="card-body">-->
+<!--                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="card">-->
+<!--                                <div class="card-header" id="headingFour">-->
+<!--                                    <h2 class="mb-0">-->
+<!--                                        <button class="btn btn-link float-left" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">-->
+<!--                                            É possível instalar novos aplicativos no aparelho?-->
+<!--                                        </button>-->
+<!--                                        <i class="fa fa-caret-down text-dourado float-right d-none d-sm-block"></i>-->
+<!--                                    </h2>-->
+<!--                                </div>-->
+<!--                                <div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#perguntasFrequentesCollapse">-->
+<!--                                    <div class="card-body">-->
+<!--                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="card">-->
+<!--                                <div class="card-header" id="headingFive">-->
+<!--                                    <h2 class="mb-0">-->
+<!--                                        <button class="btn btn-link float-left" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">-->
+<!--                                            Quantos Gigas tem o Super Tv Box?-->
+<!--                                        </button>-->
+<!--                                        <i class="fa fa-caret-down text-dourado float-right d-none d-sm-block"></i>-->
+<!--                                    </h2>-->
+<!--                                </div>-->
+<!--                                <div id="collapseFive" class="collapse" aria-labelledby="headingThree" data-parent="#perguntasFrequentesCollapse">-->
+<!--                                    <div class="card-body">-->
+<!--                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="card">-->
+<!--                                <div class="card-header" id="headingSix">-->
+<!--                                    <h2 class="mb-0">-->
+<!--                                        <button class="btn btn-link float-left" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">-->
+<!--                                            Quantos canais têm no aparelho?-->
+<!--                                        </button>-->
+<!--                                        <i class="fa fa-caret-down text-dourado float-right d-none d-sm-block"></i>-->
+<!--                                    </h2>-->
+<!--                                </div>-->
+<!--                                <div id="collapseSix" class="collapse" aria-labelledby="headingThree" data-parent="#perguntasFrequentesCollapse">-->
+<!--                                    <div class="card-body">-->
+<!--                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="card">-->
+<!--                                <div class="card-header" id="headingSeven">-->
+<!--                                    <h2 class="mb-0">-->
+<!--                                        <button class="btn btn-link float-left" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">-->
+<!--                                            Tem filmes?-->
+<!--                                        </button>-->
+<!--                                        <i class="fa fa-caret-down text-dourado float-right d-none d-sm-block"></i>-->
+<!--                                    </h2>-->
+<!--                                </div>-->
+<!--                                <div id="collapseSeven" class="collapse" aria-labelledby="headingThree" data-parent="#perguntasFrequentesCollapse">-->
+<!--                                    <div class="card-body">-->
+<!--                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+
+
+
+        <div id="block-14" class="wow fadeIn">
+            <div class="container">
+
+                <h2 class="block-title wow fadeInUp">Dúvidas Frequentes</h2>
+
+                <div class="questions">
+
+                    <div class="col wow fadeInLeft">
+
+                        <div class="item">
+                            <div class="answer">O site é seguro?</div>
+                            <div class="question">Sim somos uma empresa credenciada pelo MercadoPago, cujo é a maior plataforma de comércio eletrônico da América Latina que conecta compradores e varejistas de mais de 16 países.</div>
+                        </div><!-- item -->
+
+                        <div class="item">
+                            <div class="answer">Qual é o prazo do frete?</div>
+                            <div class="question">O prazo médio de entrega para o Brasil é de 7 a 10 dias úteis. O produto só é enviado após a confirmação do seu pagamento pela administradora do seu cartão de crédito ou após a confirmação da liquidação do boleto.</div>
+                        </div><!-- item -->
+
+                        <div class="item">
+                            <div class="answer">Quanto tempo de garantia?</div>
+                            <div class="question">Temos a garantia de Satisfação de 6 meses contra defeito do aparelho.</div>
+                        </div><!-- item -->
+
+                    </div><!-- col -->
+
+                    <div class="col wow fadeInRight">
+
+                        <div class="item">
+                            <div class="answer">Posso instalar em qualquer TV?</div>
+                            <div class="question">O Super TVBox pode ser instalado em qualquer Tv que tenha entrada HDMI.</div>
+                        </div><!-- item -->
+
+                        <div class="item">
+                            <div class="answer">Quais são os métodos de pagamento?</div>
+                            <div class="question">Aceitamos os cartões de crédito mais usados: visa, mastercard e outros. Você também pode optar pela opção de boleto bancário.</div>
+                        </div><!-- item -->
+
+                        <div class="item">
+                            <div class="answer">Como funciona o selo de satisfação garantida?</div>
+                            <div class="question">Se após o uso do produto, por no mínimo 7 dias de acordo com as instruções da embalagem, você não estiver satisfeito com os resultados do produto, devolvemos 100% do seu dinheiro.</div>
+                        </div><!-- item -->
+
+                    </div><!-- col -->
+
+                </div><!-- questions -->
+
+            </div>
+        </div><!-- block 14 -->
+
+    </div>
+
+    <footer class="bg-black">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-md-10 col-lg-8 align-self-center text-dourado text-center">
+                    <a href="#">POLÍTICA DE TROCA</a> |
+                    <a href="#">POLÍTICA DE TROCA</a> |
+                    <a href="#">POLÍTICA DE TROCA</a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col text-center copyright">
+                    <p>COPYRIGHT   2019 SUPER TV BOX. TODOS OS DIREITOS RESERVADOS</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+    <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+    <script src='https://vjs.zencdn.net/7.6.0/video.js'></script>
+
+    <script src="js/contador.js"></script>
+    <script src="js/main.js"></script>
+
+    
+
+
+
+</body>
+</html>
